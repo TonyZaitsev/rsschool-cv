@@ -1,151 +1,101 @@
-.haeder_black {
-	position: absolute;
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shippori Mincho', serif;
+}
+
+body {
+    background-color: seashell;
+}
+
+a {
+    color: white;
+}
+
+.container {
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin-top: 30px;
-    color: black;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 18px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-.haeder_black a {
-    color: black !important;
-    text-decoration: none !important;
-}
-.haeder_black a:hover {
-    text-decoration: underline !important;
-}
-.haeder_black img {
-	position: absolute;
-	margin-top: -10px;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
 }
 
-.haeder_black div:nth-child(3) {
-	flex: 146px 0 0;
-}
-@media (max-width: 576px) {
-#menu__toggle {
-  opacity: 0;
-}
-
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 0;
-}
-
-.menu__btn {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-
-  width: 100%;
-  height: 2px;
-
-  background-color: #616161;
-
-  transition-duration: .25s;
-}
-.menu__btn > span::before {
-  content: '';
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: '';
-  top: 8px;
-}
-
-.menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  left: -100%;
-  width: 300px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  background-color: #ECEFF1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  transition-duration: .25s;
-  z-index: 1;
-}
-
-.menu__item {
-  display: block;
-  padding: 12px 24px;
-
-  color: #333;
-
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-
-  text-decoration: none;
-
-  transition-duration: .25s;
-}
-.menu__item:hover {
-  background-color: #CFD8DC;
-}
-}
-@media only all and (max-width: 768px) {
-  .haeder_black img {
-    display: none;
-  }
-  .haeder_black {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .haeder_black div {
-    font-size: 20px;
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-  }
-  .haeder_black div:nth-child(3) {
-    flex: 0;
-  }
+    width: 40%;
+    height: 100%;
+    padding-top: 1rem;
+    background-color: #BFBAB6;
+    color: white;
 }
-@media only all and (min-width: 480px) {
-  .hamburger-menu {
-      display: none;
-    }
+
+.sidebar__photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-@media only all and (max-width: 480px) {
-  .haeder_black img {
-    display: none;
-  }
-  .haeder_black div {
-    display: none;
-  }
+
+.sidebar__photo img {
+    width: 40%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 3rem;
+}
+
+aside footer {
+    border-top: 1px solid white;
+} 
+
+.social {
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.social__item {
+    font-size: 20px;
+}
+
+.social__item img {
+    width: 1.3rem;
+    margin-top: 6px;
+}
+
+main footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+main footer img {
+    width: 6rem;
+}
+
+.about-section h2 {
+    text-align: center;
+}
+
+main section {
+    padding: 0 10px;
+}
+
+.code pre {
+    font-size: 0.7rem;
+    background: rgb(204, 203, 203);
 }
