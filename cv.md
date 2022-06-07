@@ -13,7 +13,7 @@ Now I’m preparing for a career change. I'm currently studying to be a Frontend
 * HTML5
 * CSS3
 * Git,GitHub 
-* 
+
 ### Education:
 
 Belarusian State University
