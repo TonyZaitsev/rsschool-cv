@@ -1,2 +1,2 @@
 # rsschool-cv
-https://github.com/TonyZaitsev/rsschool-cv/cv
+https://TonyZaitsev.github.io/rsschool-cv/cv
